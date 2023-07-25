@@ -62,7 +62,7 @@ public class Register_Controller {
 		    reg_user.setPassword(reg_user.getPassword());
 		userService.saveOrUpdate(reg_user);
 
-		return "Registered Successfully";
+		return "Registered Successfully" + "redirectto:/login";
 
 	}
 	

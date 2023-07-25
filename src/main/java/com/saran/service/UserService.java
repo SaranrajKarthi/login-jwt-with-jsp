@@ -22,7 +22,7 @@ public class UserService {
 	public void saveOrUpdate(Register_User records) {
 		loginRepo.save(records);
 	}
-	public List<Register_User> getAllReglog(String regEmail) {
+	public List<Register_User> getAllUsers(String uname) {
 		List<Register_User> regLogs = new ArrayList<Register_User>();
 		loginRepo.findAll().forEach(logs -> regLogs.add(logs));
 		return regLogs;

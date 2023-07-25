@@ -8,9 +8,20 @@ import org.springframework.web.bind.annotation.RestController;
 @Controller
 public class MainController {
 
-	@GetMapping("/hi")
+	@GetMapping("/")
 //	@ResponseBody
-	public String index() {
+	public String register() {
 		return "index";
+	}
+	@GetMapping("/login")
+//	@ResponseBody
+	public String login() {
+		return "login";
+	}
+	@GetMapping("/register")
+//	@ResponseBody
+	public String redirect_Register() {
+		return register();
+	
 	}
 }
